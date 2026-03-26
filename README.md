@@ -1,4 +1,4 @@
-# feedbag 🧺
+# feedbag 
 
 > Pack your project files into AI-ready context — in seconds.
 
