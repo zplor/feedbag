@@ -5,7 +5,7 @@
   "type": "module",
   "description": "feedbag - local file packer for AI",
   "scripts": {
-    "build": "turbo build",
+    "build": "vite build",
     "dev": "cross-env __DEV__=true vite --mode development",
     "lint": "turbo lint",
     "format": "biome format --write .",
