@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+	min-height: 100vh;
+}
+
+body {
+	margin: 0;
+	font-family: "Inter", sans-serif;
+	background-color: #fbf9f3;
+	color: #1b1c18;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.material-symbols-outlined {
+	font-variation-settings:
+		"FILL" 0,
+		"wght" 400,
+		"GRAD" 0,
+		"opsz" 24;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.dot-matrix {
+	background-image: radial-gradient(#8faf6e 0.5px, transparent 0.5px);
+	background-size: 20px 20px;
+	opacity: 0.15;
+}
+
+.grid-dots {
+	background-image: radial-gradient(circle, #c4c8b9 0.5px, transparent 0.5px);
+	background-size: 16px 16px;
+}
+
+/* Arboreal Logic Refined adjustments */
+.rounded-arboreal {
+	border-radius: 8px;
+}
+
+.ai-glow {
+	box-shadow: 0 0 20px rgba(127, 19, 236, 0.15);
+}
+.glass-sidebar {
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(10px);
+}
+
+/* Dashboard specific styles */
+.tooltip-container:hover .tooltip-box {
+	opacity: 1;
+	visibility: visible;
+}
+
+.context-dropdown:focus-within .context-modal {
+	display: block;
+}
+
+#app {
+	min-height: 100vh;
+}
+
+.custom-dashed {
+	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none'' rx='8' ry='8' stroke='%23C8C6BE' stroke-width='2' stroke-dasharray='8%2c 12' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}

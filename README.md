@@ -56,10 +56,10 @@ Paste this directly into any AI chat. The AI immediately understands your projec
 
 🚧 In active development. First release coming soon.
 
-Built with [Tauri](https://tauri.app). Mac first, Windows coming later.
+Built as a pure client-side Web app (React + Vite). Local-only: reads files in your browser and never uploads.
 
 ---
 
 ## License
 
-MIT
+See `LICENSE` for the full license text.

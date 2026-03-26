@@ -1,0 +1,131 @@
+{
+  "common": {
+    "nav": {
+      "logo": "feedbag",
+      "github": "GitHub",
+      "openApp": "打开应用"
+    },
+    "footer": {
+      "logo": "feedbag",
+      "tagline": "feedbag · 开源 · MIT 协议 · 2026",
+      "github": "GitHub",
+      "privacy": "隐私",
+      "docs": "文档"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "把文件打包。",
+      "highlight": "喂给 AI。",
+      "description": "从任意项目选择文件，添加上下文，一键复制全部。无需安装。无需注册。",
+      "startForFree": "免费开始",
+      "viewOnGithub": "在 GitHub 上查看",
+      "worksInBrowser": "支持 Chrome 和 Arc",
+      "completelyLocal": "完全本地运行",
+      "noDataLeaves": "数据不会离开您的浏览器"
+    },
+    "mockup": {
+      "sessionId": "会话ID: fb_82937_alpha",
+      "projectRoot": "项目根目录",
+      "currentPack": "当前包",
+      "filesActive": "3 个文件已激活",
+      "outputPreview": "输出预览",
+      "streamingContent": "[正在流式传输内容...]",
+      "statusReadyToCopy": "状态: 准备就绪",
+      "copyToClipboard": "复制到剪贴板",
+      "aiInstructions": "AI 指令",
+      "addContextPlaceholder": "为您的 AI 添加上下文..."
+    },
+    "features": {
+      "dragDrop": "拖入任意文件夹",
+      "dragDropDesc": "单次拖放即可即时索引本地文件。我们利用现代浏览器 API 安全地访问您的本地文件系统，无需上传。",
+      "perProject": "项目级 AI 上下文",
+      "perProjectDesc": "为每个包附加特定的提示或架构说明。确保您的 AI 理解您粘贴代码背后的「为什么」。",
+      "tokenAware": "Token 感知输出",
+      "tokenAwareDesc": "实时获取您选择的 token 计数。为 Claude 3.5、GPT-4o 或任何其他大型语言模型优化您的上下文窗口。"
+    },
+    "workflow": {
+      "badge": "工作流程",
+      "title": "三步完成完整上下文。",
+      "step1": "拖入项目",
+      "step1Desc": "将项目文件夹拖入窗口。它会在本地立即索引。",
+      "step2": "选择文件",
+      "step2Desc": "精准选择 AI 需要查看的内容。不再有文件臃肿。",
+      "step3": "复制 → 粘贴",
+      "step3Desc": "一键复制包含指令的完整包。粘贴即可开始。"
+    },
+    "cta": {
+      "title": "停止手动复制代码块。",
+      "button": "立即开始打包",
+      "availableNow": "现已在任何现代浏览器中可用"
+    }
+  },
+  "workspace": {
+    "sidebar": {
+      "title": "你的包",
+      "addPackLoading": "加载中...",
+      "noPacksYet": "还没有包",
+      "addPackButton": "添加包"
+    },
+    "pack": {
+      "alpha": "项目 Alpha",
+      "authModule": "认证模块",
+      "apiGateway": "API 网关",
+      "filesCount": "{{count}} 个文件"
+    },
+    "fileTree": {
+      "title": "文件树",
+      "tokens": "~{{count}} 个 词元",
+      "selectedTokens": "~{{count}} 已选 词元",
+      "tokensSuffix": "词元",
+      "src": "源代码",
+      "tests": "测试"
+    },
+    "context": {
+      "current": "当前上下文：在这里定义你的包范围或技术约束...",
+      "tooltip": "在这里定义你的包范围或技术约束。这个上下文能帮助系统理解你选择的文件之间的关系。",
+      "editButton": "编辑上下文",
+      "modalTitle": "更新项目上下文",
+      "placeholder": "定义范围...",
+      "saveButton": "保存更改"
+    },
+    "ignoreSettings": {
+      "button": "设置",
+      "modalTitle": "忽略规则（.gitignore 风格）",
+      "placeholder": "每行一个忽略规则，例如:\n.env\n*.env\nnode_modules/\ndist/\n",
+      "cancelButton": "取消",
+      "saveButton": "保存"
+    },
+    "toast": {
+      "importPackFirst": "请导入你的文件包",
+      "selectFilesFirst": "请先选择文件",
+      "copySuccess": "复制成功",
+      "copySuccessWithTokens": "复制成功，复制了约{{count}}个词元"
+    },
+    "emptyState": {
+      "dropFolderTitle": "拖入文件夹开始",
+      "browseSubtitle": "或点击浏览你的文件",
+      "supportText": "支持任意文件夹 · 仅本地读取 · 不会上传",
+      "howItWorksTitle": "如何工作",
+      "howItWorksDesc": "选择项目目录或文档文件夹，feedbag 将内容转换为可直接粘贴给 AI 的上下文。"
+    }
+  },
+  "layout": {
+    "header": {
+      "logo": "feedbag",
+      "explorer": "资源浏览器",
+      "openApp": "打开应用",
+      "github": "GitHub",
+      "feedback": "提建议"
+    },
+    "footer": {
+      "credits": "© 2026 FEEDBAG 工具",
+      "directoryTree": "目录树",
+      "fileHeaders": "文件头",
+      "copyToClipboard": "复制到剪贴板",
+      "tagline": "feedbag · 开源 · MIT 协议 · 2026",
+      "privacy": "隐私",
+      "docs": "文档"
+    }
+  }
+}

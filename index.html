@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>feedbag — Pack Files for AI (Local)</title>
+    <link
+      href="https://fonts.loli.net/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.loli.net/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="feedbag is a pure local AI context tool. Drag files or folders, select what you need, and copy clean prompts + code into your clipboard—no uploads."
+    />
+    <meta
+      name="keywords"
+      content="feedbag, AI context builder, AI file packer, File System Access API, local-only, clipboard, code formatting, prompt prefill"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="zplor" />
+    <link rel="canonical" href="https://feedbag.dev/" />
+    <meta name="theme-color" content="#8FAF6E" />
+    <!-- Open Graph  -->
+    <meta property="og:title" content="feedbag — Pack Files for AI (Local)" />
+    <meta
+      property="og:description"
+      content="feedbag is a pure local AI context tool. Drag files or folders, select what you need, and copy clean prompts + code into your clipboard—no uploads."
+    />
+    <meta property="og:image" content="/logo.svg" />
+    <meta property="og:image:alt" content="feedbag logo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://feedbag.dev/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="feedbag" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="feedbag — Pack Files for AI (Local)" />
+    <meta
+      name="twitter:description"
+      content="feedbag is a pure local AI context tool. Drag files or folders, select what you need, and copy clean prompts + code into your clipboard—no uploads."
+    />
+    <meta name="twitter:image" content="/logo.svg" />
+    <meta name="twitter:creator" content="@zplor" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "feedbag",
+        "url": "https://feedbag.dev/",
+        "description": "feedbag is a pure local AI context tool. Drag files or folders, select what you need, and copy clean prompts + code into your clipboard—no uploads."
+      }
+    </script>
+    <!-- Load configuration before the app -->
+    <!-- Process polyfill -->
+    <script>
+      window.process = window.process || {
+        env: {},
+        browser: true,
+        version: "0.0.0",
+      };
+    </script>
+    <style id="feedbag-initial-loader-style">
+      #feedbag-initial-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        z-index: 9999;
+        opacity: 1;
+        transition: opacity 0.2s ease-out;
+      }
+
+      html.dark #feedbag-initial-loader {
+        background-color: #0d0d0d;
+      }
+
+      #feedbag-initial-loader.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      @keyframes feedbag-spin {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .feedbag-spinner {
+        animation: feedbag-spin 1s linear infinite;
+        color: #4b5563;
+      }
+
+      html.dark .feedbag-spinner {
+        color: #d1d5db;
+      }
+
+      .feedbag-text {
+        color: #1a1a1a;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+      }
+
+      html.dark .feedbag-text {
+        color: #ececec;
+      }
+
+      .feedbag-loading-text {
+        color: #4b5563;
+        font-size: 16px;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+      }
+
+      html.dark .feedbag-loading-text {
+        color: #d1d5db;
+      }
+    </style>
+    <script>
+      (() => {
+        // Loading controller
+        window.__FEEDBAG_SHOW_LOADING__ = () => {
+          var loader = document.getElementById("feedbag-initial-loader");
+          if (loader) {
+            loader.classList.remove("hidden");
+            loader.style.display = "flex";
+          }
+        };
+        window.__FEEDBAG_HIDE_LOADING__ = () => {
+          var loader = document.getElementById("feedbag-initial-loader");
+          if (loader) {
+            loader.classList.add("hidden");
+            // Wait for fade-out animation to complete before hiding
+            setTimeout(() => {
+              loader.style.display = "none";
+            }, 300); // Match the transition duration
+          }
+        };
+      })();
+    </script>
+  </head>
+
+  <body class="font-inter feedbag">
+    <div id="feedbag-initial-loader">
+      <div class="feedbag-loading-text">
+        <svg
+          class="feedbag-spinner"
+          width="14"
+          height="14"
+          viewBox="0 0 1024 1024"
+          style="margin-right: 8px; vertical-align: middle"
+        >
+          <title>Loading</title>
+          <path
+            d="M512 1024c-69.1 0-136.2-13.5-199.3-40.2-61-25.8-115.7-63.1-162.7-110.1s-84.3-101.7-110.1-162.7C13.5 648.2 0 581.1 0 512c0-69.1 13.5-136.2 40.2-199.3 25.8-61 63.1-115.7 110.1-162.7s101.7-84.3 162.7-110.1C375.8 13.5 442.9 0 512 0c13.3 0 24 10.7 24 24s-10.7 24-24 24c-119.1 0-231.1 46.4-315.3 130.6S66 392.9 66 512s46.4 231.1 130.6 315.3S392.9 958 512 958s231.1-46.4 315.3-130.6S958 631.1 958 512c0-13.3 10.7-24 24-24s24 10.7 24 24c0 69.1-13.5 136.2-40.2 199.3-25.8 61-63.1 115.7-110.1 162.7s-101.7 84.3-162.7 110.1C648.2 1010.5 581.1 1024 512 1024z"
+            fill="currentColor"
+          />
+        </svg>
+        <span>Loading...</span>
+      </div>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+  <script
+    charset="UTF-8"
+    id="LA_COLLECT"
+    src="//sdk.51.la/js-sdk-pro.min.js"
+  ></script>
+  <script>
+    LA.init({
+      id: "3PQe1cNVlY9VMQIQ",
+      ck: "3PQe1cNVlY9VMQIQ",
+      autoTrack: true,
+      hashMode: true,
+    });
+  </script>
+</html>

@@ -1,0 +1,35 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Base (shared defaults)",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"alwaysStrict": false,
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"resolveJsonModule": true,
+		"noEmit": true,
+		"declaration": true,
+		"declarationMap": true,
+		"verbatimModuleSyntax": false,
+		"moduleDetection": "force",
+		"downlevelIteration": true,
+		"allowJs": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+		"incremental": true,
+		"tsBuildInfoFile": ".tsbuildinfo",
+		"target": "ESNext",
+		"jsx": "react-jsx",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"paths": {
+			"~/*": ["src/*"]
+		}
+	},
+	"include": ["**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules", "src/tests"]
+}

@@ -1,0 +1,131 @@
+{
+  "common": {
+    "nav": {
+      "logo": "feedbag",
+      "github": "GitHub",
+      "openApp": "Open App"
+    },
+    "footer": {
+      "logo": "feedbag",
+      "tagline": "feedbag · Open source · MIT License · 2026",
+      "github": "GitHub",
+      "privacy": "Privacy",
+      "docs": "Docs"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Pack your files.",
+      "highlight": "Feed your AI.",
+      "description": "Select files from any project, add context, copy everything in one click. No install. No signup.",
+      "startForFree": "Start for free",
+      "viewOnGithub": "View on GitHub",
+      "worksInBrowser": "Works in Chrome and Arc",
+      "completelyLocal": "Completely local",
+      "noDataLeaves": "No data leaves your browser"
+    },
+    "mockup": {
+      "sessionId": "Session_ID: fb_82937_alpha",
+      "projectRoot": "Project Root",
+      "currentPack": "Current Pack",
+      "filesActive": "3 FILES ACTIVE",
+      "outputPreview": "Output Preview",
+      "streamingContent": "[STREAMING CONTENT...]",
+      "statusReadyToCopy": "STATUS: READY_TO_COPY",
+      "copyToClipboard": "Copy to Clipboard",
+      "aiInstructions": "AI Instructions",
+      "addContextPlaceholder": "Add context for your AI..."
+    },
+    "features": {
+      "dragDrop": "Drag & drop any folder",
+      "dragDropDesc": "Instantly index local files with a single drop. We leverage modern browser APIs to access your local file system securely without uploads.",
+      "perProject": "Per-project AI context",
+      "perProjectDesc": "Attach specific prompts or architectural notes to every pack. Ensure your AI understands \"why\" behind code you're pasting.",
+      "tokenAware": "Token-aware output",
+      "tokenAwareDesc": "Get live token counts for your selection. Optimize your context window for Claude 3.5, GPT-4o, or any other large language model."
+    },
+    "workflow": {
+      "badge": "The Workflow",
+      "title": "Three steps to total context.",
+      "step1": "Drop project",
+      "step1Desc": "Drag your project folder into window. It indexes locally, immediately.",
+      "step2": "Select files",
+      "step2Desc": "Cherry-pick exactly what AI needs to see. No more file-bloat.",
+      "step3": "Copy → Paste",
+      "step3Desc": "One click copies entire pack with instructions. Paste and go."
+    },
+    "cta": {
+      "title": "Stop manually copying code blocks.",
+      "button": "Start Packing Now",
+      "availableNow": "Available now in any modern browser"
+    }
+  },
+  "workspace": {
+    "sidebar": {
+      "title": "YOUR PACKS",
+      "addPackLoading": "Loading...",
+      "noPacksYet": "No packs yet",
+      "addPackButton": "Add Pack"
+    },
+    "pack": {
+      "alpha": "PROJECT ALPHA",
+      "authModule": "AUTH MODULE",
+      "apiGateway": "API GATEWAY",
+      "filesCount": "{{count}} FILES"
+    },
+    "fileTree": {
+      "title": "FILE TREE",
+      "tokens": "~{{count}} TOKENS",
+      "selectedTokens": "~{{count}} SELECTED TOKENS",
+      "tokensSuffix": "TOKENS",
+      "src": "src",
+      "tests": "tests"
+    },
+    "context": {
+      "current": "Current Context: Define scope of your pack or technical constraints here...",
+      "tooltip": "Define scope of your pack or technical constraints here. This context helps system understand relationships between your selected files.",
+      "editButton": "EDIT CONTEXT",
+      "modalTitle": "UPDATE PROJECT CONTEXT",
+      "placeholder": "Define scope...",
+      "saveButton": "SAVE CHANGES"
+    },
+    "ignoreSettings": {
+      "button": "Settings",
+      "modalTitle": "Ignore rules (.gitignore style)",
+      "placeholder": "One rule per line, for example:\n.env\n*.env\nnode_modules/\ndist/\n",
+      "cancelButton": "Cancel",
+      "saveButton": "Save"
+    },
+    "toast": {
+      "importPackFirst": "Please import your file pack",
+      "selectFilesFirst": "Please select files first",
+      "copySuccess": "Copied successfully",
+      "copySuccessWithTokens": "Copied successfully, copied ~{{count}} tokens"
+    },
+    "emptyState": {
+      "dropFolderTitle": "Drop a folder to get started",
+      "browseSubtitle": "Or click to browse your files",
+      "supportText": "Supports any folder · Reads locally · Nothing is uploaded",
+      "howItWorksTitle": "How it works",
+      "howItWorksDesc": "Select a project directory or documentation folder — feedbag will convert it into AI-ready context you can paste anywhere."
+    }
+  },
+  "layout": {
+    "header": {
+      "logo": "feedbag",
+      "explorer": "EXPLORER",
+      "openApp": "Open App",
+      "github": "GitHub",
+      "feedback": "Submit a suggestion"
+    },
+    "footer": {
+      "credits": "© 2026 FEEDBAG TOOL",
+      "directoryTree": "DIRECTORY TREE",
+      "fileHeaders": "FILE HEADERS",
+      "copyToClipboard": "COPY TO CLIPBOARD",
+      "tagline": "feedbag · Open source · MIT License · 2026",
+      "privacy": "Privacy",
+      "docs": "Docs"
+    }
+  }
+}
